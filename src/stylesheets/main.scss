@@ -1,0 +1,10 @@
+.text {
+  color: red;
+  background-color: black;
+
+  &__info {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
