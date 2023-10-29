@@ -116,6 +116,10 @@ module.exports = {
             template: './src/pages/entertainments/bingo.html',
             filename: './pages/entertainments/bingo.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/about_us/about_us.html',
+            filename: './pages/about_us/about_us.html'
+        }),
         // Article
         // new HtmlWebpackPlugin({
         //   template: './src/articles/superorganisms/S_Popup.html',
