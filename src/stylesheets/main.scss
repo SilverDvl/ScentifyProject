@@ -1,10 +1,122 @@
-.text {
-  color: red;
-  background-color: black;
-
-  &__info {
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
+:root {
+  --bg-color: #D2BDE2;
+  --primary-color: #9CF922;
+}
+body {
+  height: calc(100vh - 40px);
+  margin: 20px;
+  overflow: hidden;
+  font-family: Santello Regular, 'sans-serif';
+}
+button {
+  font-family: Santello Regular, 'sans-serif';
+}
+input {
+  border-radius: 60px;
+  width: 300px;
+  height: 60px;
+  border: none;
+  margin-left: 20px;
+  padding: 0 20px;
+  &::placeholder {
+    font-size: 25px;
   }
+}
+header-container {
+
+}
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 60px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.release {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 12%;
+  width: 90%;
+}
+.information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-family: Mantra, 'sans-serif';
+  font-size: 400px;
+}
+.subtitle {
+  font-size: 55px;
+
+}
+.subtitle2 {
+  font-family: Santello Regular, 'sans-serif';
+  font-size: 35px;
+  width: 541px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+.subtitle3 {
+  font-family: Santello Regular, 'sans-serif';
+  font-size: 35px;
+  width: 227.789px;
+  height: 44px;
+  flex-shrink: 0;
+  background-color: var(--primary-color);
+  border-radius: 0 0 10px 10px;
+}
+.btn__release {
+  width: 200px;
+  height: 45px;
+  background-color: var(--primary-color);
+  border-radius: 60px;
+  border: none;
+  font-size: 23px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.subscribe {
+  display: flex;
+}
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+}
+.label {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 39px;
+  }
+.image {
+  position: relative;
+  filter: blur(5px);
+  backdrop-filter: blur(3px);
+  transition: all 1s;
+  width: 590px;
+  z-index: 45;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  &:hover {
+    filter: blur(0px);
+    backdrop-filter: blur(0px);
+  }
+}
+.header-container {
+  margin-bottom: auto;
 }
