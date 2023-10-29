@@ -71,6 +71,9 @@ form {
     justify-content: space-between;
   }
 }
+.socials {
+  margin-right: 15px;
+}
 .about-page {
   background-color: var(--primary-color);
   font-size: 22px;
@@ -215,8 +218,8 @@ form {
     top: 18%;
   }
   @media only screen and (max-width: 1512px) {
-    top: 18%;
-    left: 15%;
+    top: 20%;
+    left: 13%;
   }
   @media only screen and (max-width: 1024px) {
     top: 10%;
@@ -284,8 +287,8 @@ form {
     left: 4%;
   }
   @media only screen and (max-width: 1512px) {
-    bottom: 20%;
-    left: 9%;
+    bottom: 6%;
+    left: 6%;
   }
   @media only screen and (max-width: 1024px) {
     bottom: 27%;
@@ -327,7 +330,7 @@ form {
     bottom: 11%;
   }
   @media only screen and (max-width: 1512px) {
-    bottom: 14%;
+    bottom: 5%;
   }
   @media only screen and (max-width: 1024px) {
     bottom: 40%;
@@ -390,7 +393,11 @@ form {
   }
 }
 .release-form {
-  position: absolute;
-  bottom: 5%;
-  right: 10%;
+  display: none;
+  @media only screen and (max-width: 1024px) {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+  }
 }
