@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  height: 60vh;
+  &__column {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+  }
+  &-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secondary-color);
+  }
+  &-menu {
+    &-media {
+      width: 300px;
+    }
+    &-list {
+      width: 350px;
+    }
+    a {
+      color: var(--secondary-color);
+    }
+    li {
+      margin: 10px 0;
+    }
+  }
+  &-extras {
+    &-menu {
+      width: 300px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    a {
+      color: var(--secondary-color);
+    }
+  }
+}

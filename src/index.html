@@ -2,74 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>Scentify</title>
-
 </head>
 <body>
-<div class="container_release">
-    <!--заглушка-->
-    <div class="container">
-        <div class="header-container">
-            <div class="socials">
-                <a href="" class="icon"><i class="fa-brands fa-telegram"></i></a>
-                <a href="" class="icon"><i class="fa-brands fa-youtube"></i></a>
-                <a href="" class="icon"><i class="fa-brands fa-vk"></i></a>
+<div class="wrap-header">
+    <div class="overprint1">
+        <img src="./images/overprint1.svg" alt="overprint1">
+    </div>
+    <header></header>
+    <div class="logo">
+        <img src="./images/logo.svg" alt="Scentify">
+    </div>
+    <div class="scentify-introduction">
+        Медиа-ресурс о<span class="no-wrap"> мире парфюмерии</span> и ароматов
+    </div>
+    <div class="overprint2">
+        <img src="./images/overprint2.svg" alt="overprint1">
+    </div>
+    <div class="overprint3">
+        <img src="./images/overprint6.svg" alt="overprint1">
+    </div>
+</div>
+<div class="wrap-main">
+    <div class="articles-section">
+        <div class="container">
+            <div class="title"><a href="./pages/longread/longread.html">Статьи</a></div>
+            <div class="cards">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="./images/section1.png" alt="photo1">
+                    </div>
+                    <div class="card-description">Раздел "Статьи" представляет собой настоящую энциклопедию в<span class="no-wrap"> мире</span> парфюмерии,
+                        обеспечивая пользователям богатую и<span class="no-wrap"> детализированную</span> информацию о различных аспектах этого искусства.
+                        Здесь собраны статьи на различные темы, которые помогут углубить знания в области парфюмерии и расширить
+                        свои<span class="no-wrap"> горизонты</span>.
+                    </div>
+                </div>
+                <div class="card-wrapper2">
+                    <div class="card-img2">
+                        <img src="./images/kwa.png" alt="просто">
+                    </div>
+                    <div class="card-description2">В нашей регулярной рубрике «Статья месяца» мы хотим обратить ваше внимание на<span class="no-wrap"> аромат</span>, который особенно выделился в этом месяце
+                    </div>
+                </div>
             </div>
-            <a href="./pages/about_us/about_us.html" class="about-page">О нас</a>
-        </div>
-        <div class="image-wrapper">
-            <div class="image">
-                <div class="label">статьи</div>
-                <img src="./images/card1.svg" alt="статьи">
-            </div>
-        </div>
-        <div class="release">
-            <div class="subscribe-wrapper">
-                <div class="subtitle">Узнай о запуске</div>
-                <div class="subscribe">
-                    <div class="subtitle">первым!</div>
-                    <form action="https://formspree.io/f/xaygvzrv" method="POST">
-                        <label>
-                            <input type="email" name="email" placeholder="scentify@gmail.com">
-                        </label>
-                        <button type="submit" class="btn__release">Подписаться</button>
-                    </form>
+            <div class="card-wrapper3">
+                <div class="card-img3">
+                    <img src="./images/kwa.png" alt="просто">
+                </div>
+                <div class="card-description3">
+                    Мы детально расскажем об этом уникальном аромате,
+                    который завоевал признание и<span class="no-wrap"> популярность</span> среди любителей парфюмерии. Мы не только описываем основные
+                    и<span class="no-wrap"> дополнительные</span> ноты этого аромата, но и делимся историей его<span class="no-wrap"> создания</span>.
+                    <a href="#" class="articles__btn">узнать больше</a>
                 </div>
             </div>
         </div>
-        <div class="information">
-            <div class="title">scentify</div>
-            <div class="subtitle2">Медиасервис о парфюмерии</div>
-            <div class="subtitle3">и ароматах</div>
         </div>
-        <div class="image-wrapper2">
-            <div class="image2">
-                <div class="label2">тесты</div>
-                <img src="./images/card2.svg" alt="статьи">
+    <div class="library-section-wrapper">
+        <div class="container">
+            <div class="library-section">
+                <div class="title title-white"><a href="#">Библиотека</a></div>
+                <div class="card">
+                    <div class="card__title">Звезды</div>
+                    <div class="cards__text">Библиотека ароматов - это обширный раздел, в котором собраны все доступные ароматы.
+                        В этом разделе представлены детальные описания каждого аромата, включая характеристики, основные и
+                        дополнительные ноты. <br> Пользователи могут воспользоваться фильтром в библиотеке, чтобы найти интересующий
+                        их аромат или же просто просмотреть всю коллекцию, чтобы узнать больше о различных ароматах.
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="test-sections">
+        <div class="container">
+            <div class="title"><a href="#">Тесты</a></div>
+            <div class="card-wrapper">
+                <div class="test-img">
+                    <img src="./images/kwa2.png" alt="kwa2">
+                </div>
+                <div class="card-description4">Раздел тестов поможет вам узнать больше о своих предпочтениях в ароматах.
+                    Здесь представлен "Бинго", игровой тест, в котором вы отмечаете ароматы, которые вам нравятся, и в итоге получаете
+                    общую картину своих предпочтений. Также есть тест на<span class="no-wrap"> типирование,</span> который поможет определить ваш тип аромата
+                    на<span class="no-wrap"> основе вашего характера,</span> стиля жизни и личных предпочтений.
+                    <a href="#" class="button">узнать больше</a>
+                </div>
             </div>
         </div>
-        <div class="image-wrapper3">
-            <div class="image3">
-                <div class="label3">библиотека</div>
-                <img src="./images/card3.svg" alt="статьи">
-            </div>
-        </div>
-        <div class="release-wrapper2">
-            <div class="release-info">
-                <div class="release-text">Узнай о запуске</div>
-                <div class="release-text">первым!</div>
-            </div>
-        </div>
-        <div class="release-form">
+    </div>
+    <div class="subscription-section">
+        <div class="container">
+            <div class="subscription-info">Ранний доступ к нашему медиасервису, а также информация об обновлениях</div>
             <form action="https://formspree.io/f/xaygvzrv" method="POST">
                 <label>
                     <input type="email" name="email" placeholder="scentify@gmail.com">
                 </label>
-                <button type="submit" class="btn__release">Подписаться</button>
+                <button type="submit" class="release">Подписаться на рассылку</button>
             </form>
         </div>
     </div>
 </div>
-</div>
+<footer></footer>
 </body>
 </html>

@@ -1,0 +1,42 @@
+@use "about_us";
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+  --main-color: #251F1D;
+  --secondary-color: #ECEBE1;
+  --main-font-family: 'Spectral', serif;
+  --secondary-font-family: 'Spectral SC', serif;;
+}
+.navigation {
+  &__menu {
+    display: flex;
+    padding: 20px 0;
+    &::before {
+      display: block;
+      content: "";
+      width: 790px;
+      height: 2px;
+      flex-shrink: 0;
+      background-color: var(--main-color);
+      margin-top: 11px;
+      margin-right: 20px;
+    }
+  }
+}
+.menu-item {
+  margin-right: 56px;
+  font: italic 400 16px var(--main-font-family);
+  text-transform: uppercase;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.scentify-introduction {
+ font: italic 800 41.89px/45px var(--secondary-font-family);
+  color: var(--main-color);
+  margin-left: 60px;
+  width: 27%;
+}
+.no-wrap {
+  white-space: nowrap;
+}

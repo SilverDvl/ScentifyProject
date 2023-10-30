@@ -1,0 +1,86 @@
+.wrap {
+  &-header {
+    position: relative;
+    height: 100vh;
+  }
+  &-main {
+    position: relative;
+  }
+  &-footer {
+    background-color: var(--main-color);
+  }
+}
+
+.overprint1 {
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 30%;
+  z-index: -10;
+}
+.logo {
+  padding: 40px 0;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.overprint2 {
+  position: absolute;
+  top: 70%;
+  z-index: -10;
+  width: 20%;
+}
+.overprint3 {
+ position: absolute;
+  top: 33%;
+  right: 0;
+  width: 37%;
+}
+.overprint4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+}
+.overprint5 {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 44%;
+  transform: rotate(12deg);
+}
+.overprint6 {
+  position: absolute;
+  top: 26%;
+  right: 0;
+  width: 25%;
+  transform: rotate(0deg);
+}
+//.overprint7 {
+//  position: absolute;
+//  top: 50%;
+//  right: -5%;
+//  width: 44%;
+//  transform: rotate(335deg);
+//}
+.overprint8 {
+  position: absolute;
+  top: 81%;
+  right: 18%;
+  width: 23%;
+  transform: rotate(314deg);
+}
+.overprint9 {
+  position: absolute;
+  left: 0;
+  top: 95%;
+  width: 29%;
+}
+
+.test-img {
+  width: 60%;
+  position: relative;
+  img {
+    border-radius: 10px;
+  }
+}

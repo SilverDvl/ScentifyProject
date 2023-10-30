@@ -1,0 +1,147 @@
+.cards {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+.card-img2:hover + .card-description2 {
+  z-index: 0; /* При наведении курсора на картинку описание будет под ней */
+}
+
+.card {
+  &-wrapper {
+    position: relative;
+  }
+  &-wrapper2 {
+    position: relative;
+    width: 600px;
+  }
+  &-wrapper3 {
+    position: relative;
+  }
+  &-img {
+    position: relative;
+    width: 315px;
+    z-index: 2;
+  }
+  &-img2 {
+    position: relative;
+    width: auto;
+    z-index: 1;
+  }
+  &-img3 {
+    position: relative;
+    width: 580px;
+    z-index: 2;
+    padding-top: 80px;
+  }
+  &-title {
+    font: italic 400 26px var(--secondary-font-family);
+    padding: 5px 0;
+  }
+  &-description {
+    position: absolute;
+    top: 30px;
+    left: 64%;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    font: normal 400 16px var(--main-font-family);
+    z-index: 1;
+    transition: z-index 0.1s ease;
+
+    &:hover {
+      z-index: 4;
+    }
+  }
+  &-description2 {
+    position: absolute;
+    top: 45%;
+    right: 80%;
+    width: 250px;
+    height: auto;
+    padding: 30px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    font: normal 400 16px var(--main-font-family);
+    z-index: 2;
+    transition: z-index 0.1s ease;
+
+    &:hover {
+      z-index: 3;
+    }
+  }
+  &-description3 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    font: normal 400 16px var(--main-font-family);
+    z-index: 1;
+    transition: z-index 0.1s ease;
+    &:hover {
+      z-index: 4;
+    }
+  }
+  &-description4 {
+    position: absolute;
+    bottom: -4%;
+    left: 52%;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    font: normal 400 16px var(--main-font-family);
+    z-index: 1;
+    transition: z-index 0.1s ease;
+    &:hover {
+      z-index: 4;
+    }
+  }
+}
+.longread-card {
+  top: 23%;
+  right: 59%;
+  width: 500px;
+  height: auto;
+}
+.top {
+  top: 27%
+}
+.padding144 {
+  padding: 144px 0;
+}
+
+.articles {
+  &__btn {
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-top: 20px;
+    font: normal 400 16px var(--main-font-family);
+    width: 22%;
+    a {
+      color: var(--secondary-color);
+    }
+    :hover {
+      z-index: 3;
+    }
+  }
+}
+
+.test-img {
+  position: relative;
+  width:60%;
+  z-index: 2;
+}
