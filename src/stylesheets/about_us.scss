@@ -2,11 +2,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .container__about-us {
   max-width: 1400px;
+  height: 1230px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+.fst_container {
+  height: 817px;
 }
 .header {
   display: flex;
@@ -44,10 +49,10 @@ body {
   }
   &__image {
     position: absolute;
-    width: 26%;
+    // width: 26%;
     &:nth-of-type(1) {
-      top: 5%;
-      left: 2%;
+      top: 8%;
+      left: 6%;
     }
     &:nth-of-type(2) {
       top: 5%;
@@ -66,7 +71,7 @@ body {
     background: #D2BDE2;
     width: 88%;
     border-radius: 60px;
-    height: 400px;
+    height: 678px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +96,8 @@ body {
     color: black;
   }
   &__text {
-    font-size: 120px;
+    font-family: Mantra, "sans-serif";
+    font-size: 260px;
     z-index: 2;
   }
 }
@@ -154,15 +160,15 @@ body {
   }
 }
 
-/*
+
 @keyframes marquee {
   0% {
-    transform: translateX(100%); !* Начальная позиция: сдвигаем на 100% вправо *!
+    transform: translateX(100%); /* Начальная позиция: сдвигаем на 100% вправо */
   }
   100% {
-    transform: translateX(-100%); !* Конечная позиция: сдвигаем на 100% влево *!
+    transform: translateX(-100%); /* Конечная позиция: сдвигаем на 100% влево */
   }
-}*/
+}
 .wrapper {
   display: flex;
   margin-top: 50px;
@@ -254,7 +260,7 @@ body {
 .block2 {
   background: #d2bde2;
   width: 25%;
-  height: 300px;
+  height: 181px;
   border-radius: 45px;
   position: relative;
   margin-left: 50px;
@@ -305,7 +311,7 @@ body {
   }
 }
 .wrapper2 .block2{
-  width: 23%;
+  width: 43%;
   @media only screen and (max-width: 1300px) {
    height: 234px;
   }
@@ -328,7 +334,7 @@ body {
 .block2 {
   background: #d2bde2;
   width: 18%;
-  height: 300px;
+  height: 290px;
   border-radius: 45px;
   position: relative;
   padding: 20px 30px;
@@ -387,11 +393,15 @@ body {
   padding: 20px 30px;
 }
 .margin-container2 {
-  margin-top: 146px;
+  margin-top: -537px;
+  height: 875px;
+}
+.frth_container {
+  height: 679px;
 }
 .img7 {
   position: absolute;
-  top: 29%;
+  // top: 29%;
   left: 0;
   width: 420px;
   @media only screen and (max-width: 1300px) {
@@ -400,9 +410,9 @@ body {
 }
 .img8 {
   position: absolute;
-  top: 61%;
+  top: 65%;
   right: 5%;
-  width: 500px;
+  // width: 500px;
   @media only screen and (max-width: 1300px) {
     top: 61%;
     right: 43%;
