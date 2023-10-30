@@ -12,7 +12,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
+    justify-content: unset;
+  }
+  @media only screen and (max-width: 800px) {
     justify-content: unset;
   }
   &__content {
@@ -68,8 +71,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    @media only screen and (max-width: 1512px) {
-      width: 53%
+    @media only screen and (max-width: 800px) {
+      width: 98%
     }
   }
   &__button {
@@ -146,7 +149,7 @@ body {
   display: inline-block; /* Размещаем содержимое в строчном блоке */
   animation: marquee 5s linear infinite; /* Задаем анимацию */
   font-size: 8vh;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     font-size: 6vh;
   }
 }
@@ -164,9 +167,12 @@ body {
   display: flex;
   margin-top: 50px;
   margin-left: 100px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     margin-top: -69px;
     margin-left: 95px;
+    @media only screen and (max-width: 1512px) {
+      margin-left: 164px;
+    }
   }
   &:last-of-type {
     margin-bottom: 0;
@@ -179,20 +185,24 @@ body {
   border-radius: 45px;
   position: relative;
   padding: 20px 30px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     width: 27%;
+    height: 198px;
+  }
+  @media only screen and (max-width: 800px) {
+    width: 41%;
     height: 198px;
   }
   &__title {
     font-size: 40px;
     margin-bottom: 10px;
-    @media only screen and (max-width: 1512px) {
+    @media only screen and (max-width: 1300px) {
       font-size: 35px;
     }
   }
   &__text {
     font-size: 20px;
-    @media only screen and (max-width: 1512px) {
+    @media only screen and (max-width: 1300px) {
       font-size: 18px;
     }
   }
@@ -203,6 +213,14 @@ body {
     position: absolute;
     right: -50px;
     top: 149px;
+    @media only screen and (max-width: 800px) {
+      width: 50px;
+      height: 90px;
+      background: #d2bde2;
+      position: absolute;
+      right: -50px;
+      top: 115px;
+  }
     &::before {
       content: '';
       position: absolute;
@@ -227,7 +245,12 @@ body {
     }
   }
 }
-
+.wrapper .block {
+  @media only screen and (max-width: 800px) {
+    width: 41%;
+    height: 198px;
+  }
+}
 .block2 {
   background: #d2bde2;
   width: 25%;
@@ -239,7 +262,7 @@ body {
   padding: 20px 30px;
 }
 .wrapper .block2 {
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     height: 193px;
   }
 }
@@ -252,7 +275,7 @@ body {
   position: absolute;
   width: 550px;
   top: 62px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     width: 400px;
   }
 }
@@ -261,7 +284,7 @@ body {
   width: 600px;
   top: 613px;
   right: 50px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
    position: absolute;
    width: 399px;
     top: 613px;
@@ -283,7 +306,7 @@ body {
 }
 .wrapper2 .block2{
   width: 23%;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
    height: 234px;
   }
 }
@@ -296,7 +319,7 @@ body {
   margin-left: 47px;
   margin-top: 133px;
   padding: 20px 30px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     height: 67px;
     margin-left: 36px;
     margin-top: 176px;
@@ -312,13 +335,13 @@ body {
   &__title {
     font-size: 40px;
     margin-bottom: 10px;
-    @media only screen and (max-width: 1512px) {
+    @media only screen and (max-width: 1300px) {
       font-size: 35px;
     }
   }
   &__text {
     font-size: 20px;
-    @media only screen and (max-width: 1512px) {
+    @media only screen and (max-width: 1300px) {
       font-size: 18px;
     }
   }
@@ -371,7 +394,7 @@ body {
   top: 29%;
   left: 0;
   width: 420px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     width: 287px;
   }
 }
@@ -380,7 +403,7 @@ body {
   top: 61%;
   right: 5%;
   width: 500px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     top: 61%;
     right: 43%;
     width: 365px;
@@ -430,14 +453,14 @@ body {
   &__title {
     font-size: 40px;
     margin-bottom: 20px;
-    @media only screen and (max-width: 1512px) {
+    @media only screen and (max-width: 1300px) {
       font-size: 35px;
     }
   }
   &__text {
     font-size: 20px;
     margin-bottom: 10px;
-    @media only screen and (max-width: 1512px) {
+    @media only screen and (max-width: 1300px) {
       font-size: 18px;
     }
   }
@@ -453,6 +476,9 @@ body {
   position: absolute;
   top: -31%;
   z-index: 3;
+  @media only screen and (max-width: 800px) {
+    width: 937px;
+  }
 }
 .img9 {
   position: absolute;
@@ -476,7 +502,7 @@ body {
     top: 10%;
     left: 0;
     width: 500px;
-    @media only screen and (max-width: 1512px) {
+    @media only screen and (max-width: 1300px) {
      width: 410px;
     }
   }
@@ -508,7 +534,7 @@ body {
   font-size: 40px;
   margin-top: 0;
   height: 46px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     font-size: 35px;
     width: 362px;
     margin-left: 26%;
@@ -518,7 +544,7 @@ body {
   width: 600px;
   margin-left: auto;
   font-size: 20px;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     font-size: 18px;
     width: 427px;
     margin-left: 31%;
@@ -528,7 +554,7 @@ body {
   height: 20px;
   width: 312px;
   margin-left: auto;
-  @media only screen and (max-width: 1512px) {
+  @media only screen and (max-width: 1300px) {
     height: 35px;
     width: 219px;
     margin-left: 40%;
