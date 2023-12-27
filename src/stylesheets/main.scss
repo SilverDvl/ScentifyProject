@@ -200,9 +200,9 @@ button {
     font-size: 6rem; //96px
     letter-spacing: 5px;
   }
-  @media screen and (max-width: 430px) {
+  @media screen and (min-width: 430px) and (max-width: 733px) {
     font-size: 3.5rem;
-    letter-spacing: 0.2rem; //3.2px
+    letter-spacing: 0.2rem;
     padding: 0;
   }
 
