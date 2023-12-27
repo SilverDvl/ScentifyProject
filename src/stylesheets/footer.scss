@@ -1,14 +1,14 @@
 .footer {
   padding: 80px 0;
-  @media screen and (max-width: 834px) {
+  @media screen and (max-width: 774px) {
     padding: 40px 10px;
   }
   &__list {
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 834px) {
+    @media screen and (max-width: 774px) {
       justify-content: unset;
-      flex-direction: column;
+      //flex-direction: column;
     }
   }
   &__copyright {
@@ -32,40 +32,74 @@
     color: var(--secondary-color);
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: 834px) {
+    @media screen and (max-width: 774px) {
       margin-bottom: 40px;
       &:last-of-type {
         margin-bottom: 0;
       }
     }
   }
+  @media screen and (max-width: 834px) {
+    font-size: 0.9rem; //14px
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 0.94rem; //15px
+  }
   &-title {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--secondary-color);
+    @media screen and (max-width: 774px) {
+      padding-bottom: 0;
+      width: 11rem;
+    }
     @media screen and (max-width: 834px) {
       padding-bottom: 0;
+    }
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 5px;
     }
   }
   &-menu {
     &-media {
-      width: 300px;
+      width: 19rem;
+      @media screen and (max-width: 834px) {
+        width: 13rem;
+      }
+      @media screen and (max-width: 1024px) {
+        width: 14.75rem;
+      }
     }
     &-list {
-      width: 350px;
+      width: 22rem;
+      @media screen and (max-width: 834px) {
+       width: 16rem;
+      }
+      @media screen and (max-width: 1024px) {
+        width: 18rem;
+      }
     }
     a {
       color: var(--secondary-color);
     }
     li {
       margin: 20px 0;
-      @media screen and (max-width: 834px) {
+      @media screen and (max-width: 774px) {
+        margin: 10px 0;
+      }
+      @media screen and (max-width: 1024px) {
         margin: 10px 0;
       }
     }
   }
   &-extras {
     &-menu {
-      width: 300px;
+      width: 19rem;
+      @media screen and (max-width: 834px) {
+        width: 13rem;
+      }
+      @media screen and (max-width: 1024px) {
+        width: 11.75rem;
+      }
     }
     li {
       margin: 10px 0;
@@ -73,5 +107,10 @@
     a {
       color: var(--secondary-color);
     }
+  }
+}
+.test {
+  @media screen and (max-width: 734px) {
+    margin-top: 25rem;
   }
 }

@@ -2,7 +2,7 @@
   &-header {
     position: relative;
     height: 100vh;
-    @media screen and (max-width: 834px) {
+    @media screen and (max-width: 774px) {
       height: 82vh;
     }
   }
@@ -11,9 +11,35 @@
   }
   &-footer {
     background-color: var(--main-color);
-    @media screen and (max-width: 834px) {
-      margin-top: 40px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 7rem;
     }
+    @media screen and (max-width: 834px) {
+      margin: 5rem 0 0;
+    }
+    //@media screen and (max-width: 774px) {
+    //  margin-top: 25rem;
+    //}
+    //@media screen and (max-width: 430px) {
+    //  margin-top: 20rem;
+    //}
+  }
+}
+
+.logo {
+  padding: 2.5rem 0; //40px
+  width: 85%;
+  margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+    padding: 5rem 0;
+    width: 100%;
+  }
+  @media screen and (max-width: 834px) {
+    padding: 9rem 0 0.9rem; // 144px 0 15px
+    width: 100%;
+  }
+  @media screen and (max-width: 744px) {
+    padding: 5rem 0 0.9rem; //80px 0 15px
   }
 }
 
@@ -23,26 +49,37 @@
   left: -5%;
   width: 30%;
   z-index: -10;
+  @media screen and (max-width: 744px) {
+    width: 45%;
+  }
   @media screen and (max-width: 834px) {
-    width: 80%;
+    width: 45%;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 45%;
+  }
+  @media screen and (max-width: 1280px) {
+    width: 40%;
   }
 }
-.logo {
-  padding: 40px 0;
-  width: 85%;
-  margin: 0 auto;
-  @media screen and (max-width: 834px) {
-    padding: 144px 0 15px;
-    width: 100%;
-  }
-}
-
 .overprint2 {
   position: absolute;
   top: 70%;
   z-index: -10;
   width: 20%;
+  @media screen and (max-width: 1280px) {
+    top: 80%;
+    width: 25%;
+  }
+  @media screen and (max-width: 1024px) {
+    top: 90%;
+    width: 24%;
+  }
   @media screen and (max-width: 834px) {
+    top: 81%;
+    width: 29%;
+  }
+  @media screen and (max-width: 774px) {
     top: 68%;
     left: -10%;
     width: 36%;
@@ -53,44 +90,21 @@
   top: 33%;
   right: 0;
   width: 37%;
-  @media screen and (max-width: 834px) {
+  @media screen and (max-width: 774px) {
     top: 70%;
     width: 65%;
   }
+  @media screen and (max-width: 834px) {
+    top: 56%;
+    right: -5%;
+    width: 42%;
+  }
+  @media screen and (max-width: 1024px) {
+    top: 55%;
+    width: 43%;
+  }
 }
-.overprint4 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 33%;
-}
-.overprint5 {
-  position: absolute;
-  top: 12%;
-  left: 0;
-  width: 44%;
-  transform: rotate(12deg);
-}
-.overprint6 {
-  position: absolute;
-  top: 26%;
-  right: 0;
-  width: 25%;
-  transform: rotate(0deg);
-}
-.overprint8 {
-  position: absolute;
-  top: 81%;
-  right: 18%;
-  width: 23%;
-  transform: rotate(314deg);
-}
-.overprint9 {
-  position: absolute;
-  left: 0;
-  top: 95%;
-  width: 29%;
-}
+
 
 .test-img {
   width: 60%;

@@ -7,7 +7,15 @@
   --card-color: #DED6C7;
   --main-font-family: 'Spectral', serif;
   --secondary-font-family: 'Spectral SC', serif;
+  --font-size: 1rem; //16px
+  --font-size-h4: 1.625rem; //26px
+  --font-size-h3: 2.625rem; //42px
+  --font-size-h2: 4.25rem;  //68px
+  --font-size-h1: 6.875rem;  //110px
 
+}
+.no-wrap {
+  white-space: nowrap;
 }
 body {
   background-color: var(--secondary-color);
@@ -15,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -31,7 +40,7 @@ ul {
 }
 img {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 form {
@@ -40,20 +49,24 @@ form {
   align-items: center;
 }
 input {
-  border: 3.198px solid #251F1D;
+  border: 3px solid #251F1D;
   width: 330px;
   height: 39px;
   background: transparent;
-  font-size: 16px;
+  font-size: var(--font-size);
   padding: 4px 10px;
   border-radius: 5px;
   @media screen and (max-width: 834px) {
+    width: 260px;
+    height: 1.875rem; //30px
+  }
+  @media screen and (max-width: 774px) {
     height: 20px;
     width: 200px;
     font-size: 13px;
   }
   &::placeholder {
-    font: normal 400 16px var(--main-font-family);
+    font: normal 400 var(--font-size) var(--main-font-family);
   }
 }
 button {
@@ -64,17 +77,30 @@ button {
   background-color: var(--main-color);
   border-radius: 5px;
   color: var(--secondary-color);
-  font: normal 400 16px var(--main-font-family);
+  font: normal 400 var(--font-size) var(--main-font-family);
+  @media screen and (max-width: 1024px) {
+    font-size: 0.94rem; //15px
+    padding: 8px 15px;
+  }
   @media screen and (max-width: 834px) {
+    font-size: 0.9rem; //14px
+  }
+  @media screen and (max-width: 774px) {
     padding: 8px 11px;
     font-size: 13px;
   }
 }
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 89.5rem;
   @media screen and (max-width: 1400px) {
+    padding: 0 1.3rem; //0 20px
+  }
+  @media screen and (max-width: 1280px) {
     padding: 0 10px;
+  }
+  @media screen and (max-width: 744px) {
+    padding: 0 15px;
   }
 }
 .button {
@@ -86,17 +112,27 @@ button {
   display: flex;
   margin-left: auto;
   margin-top: 20px;
-  font: normal 400 16px var(--main-font-family);
+  font: normal 400 var(--font-size) var(--main-font-family);
   float: right;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.94rem; //15px;
+    width: 21%;
+    padding: 0.3rem 0.61rem; //5px 10px (0.605)
+    margin-top: 1.3rem;
+  }
   @media screen and (max-width: 834px) {
-    font-size: 13px;
-    width: 29%;
+    font-size: 0.94rem; //15px;
+  }
+  @media screen and (max-width:774px) {
+    font-size: 0.94rem; //15px
+    width: 15%;
     float: unset;
+    padding: 0.313rem 0.625rem;
   }
 }
 .articles-section {
   margin: 80px 0;
-  @media screen and (max-width: 834px) {
+  @media screen and (max-width: 774px) {
     margin: 0;
   }
 }
@@ -105,29 +141,45 @@ button {
     margin: 80px 0;
     background-color: var(--main-color);
     height: 100vh;
-    @media screen and (max-width: 834px) {
+    @media screen and (max-width: 1024px) {
+      margin: 80px 0 0;
+    }
+    @media screen and (max-width: 774px) {
       margin: 0;
-      height: 60vh;
+      height: 80vh;
     }
   }
 }
 .title {
-  font: italic 800 67.77px var(--secondary-font-family);
-  padding: 40px 0;
+  font: italic 800 var(--font-size-h2) var(--secondary-font-family); //68px
+  padding: 2.5rem 0;
+  @media screen and (max-width: 1024px) {
+    font-size: 3.7rem; //60px
+  }
   @media screen and (max-width: 834px) {
-    font-size: 35px;
+    font-size: 2.8rem; //45px
+  }
+  @media screen and (max-width: 774px) {
+    font-size: 2.6rem;
     padding: 20px 0 20px;
   }
   a {
     color: var(--main-color)
   }
   &-white {
-    font: italic 800 67.77px var(--secondary-font-family);
-    padding: 40px 0;
+    font: italic 800 var(--font-size-h2) var(--secondary-font-family);
+    padding: 2.5rem 0;
     display: flex;
     justify-content: end;
+    @media screen and (max-width: 1024px) {
+      font-size: 3.7rem; //60px
+    }
     @media screen and (max-width: 834px) {
-      font-size: 35px;
+      font-size: 2.813rem; //45px
+      padding: 1.6rem 0; //26px
+    }
+    @media screen and (max-width: 774px) {
+      font-size: 2.6rem;
       padding: 20px 20px;
     }
     color: var(--secondary-color);
@@ -137,43 +189,108 @@ button {
   }
 }
 .secondary-title {
-  font: italic 800 109px var(--secondary-font-family);
-  padding: 40px 0;
+  font: italic 800 var(--font-size-h1) var(--secondary-font-family); //110px
+  padding: 2.5rem 0;
   letter-spacing: 10px;
+  @media screen and (max-width: 834px) {
+    padding: 2rem;
+    letter-spacing: 8px;
+  }
+  @media screen and (max-width: 744px) {
+    font-size: 6rem; //96px
+    letter-spacing: 5px;
+  }
+  @media screen and (max-width: 430px) {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem; //3.2px
+    padding: 0;
+  }
+
 }
 .sub-title {
-  font: italic 800 41.89px/45px var(--secondary-font-family);
-  padding: 80px 0 3px;
+  font: italic 800 var(--font-size-h3)/2.813rem var(--secondary-font-family); //42px/45px
+  padding: 5rem 0 3px; //80px
   border-bottom: 1.5px solid var(--main-color);
-  width: 700px;
+  width: 43.75rem; // 700px
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem; //40px
+    width: 13.75rem;
+  }
+  @media screen and (max-width: 834px) {
+    font-size: 2.5rem; //h3
+    width: 18.75rem;
+    padding: 5rem 0 0;
+  }
+  @media screen and (max-width: 744px) {
+
+    font-size: 2.813rem; //45px;
+    width: 17.75rem;
+    padding: 80px 0 0;
+  }
+  @media screen and (max-width: 430px) {
+    font-size: 2.22rem; //34px (2.215)
+    padding: 5rem 0 0;
+    width: 13.75rem;
+  }
 }
 .card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 2rem;
   background: var(--card-color);
   width: 45%;
   border-radius: 10px;
-  @media screen and (max-width: 834px){
-    padding: 14px;
+  @media screen and (max-width: 1280px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 1.61rem;
+    width: 57%;
+  }
+  @media screen and (max-width: 834px) {
+    width: 55%;
+  }
+  @media screen and (max-width: 774px){
+    padding: 0.813rem;
     width: unset;
   }
   &__title {
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    padding-bottom: 0.625rem; //10px
+    border-bottom: 1px solid var(--main-color);
     margin-bottom: 5px;
-    font: italic 300 41.89px var(--secondary-font-family);
-    @media screen and (max-width: 834px){
+    font: italic 300 var(--font-size-h3) var(--secondary-font-family);
+    @media screen and (max-width: 1280px) {
       padding-bottom: 0;
-      font-size: 20px;
+      margin-bottom: 1.3rem;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 2.5rem; //40px
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: 834px) {
+      font-size: 2rem; //32px
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: 774px){
+      padding-bottom: 0;
+      font-size: 1.313rem;
     }
   }
   &__text {
     line-height: 32px;
-    font: normal 400 16px var(--main-font-family);
-    @media screen and (max-width: 834px){
+    font: normal 400 var(--font-size) var(--main-font-family);
+    @media screen and (max-width: 1280px) {
+      line-height: 1.56rem;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 834px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 774px){
       line-height: 22px;
-      font-size: 13px;
+      font-size: 0.813rem; //13px
     }
     &-test {
       position: absolute;
@@ -199,20 +316,35 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width: 834px) {
+    @media screen and (max-width: 774px) {
       max-width: unset;
       padding: 0;
     }
   }
   &-info {
-    font: normal 600 42px/47px var(--main-font-family);
+    font: normal 600 var(--font-size-h3)/47px var(--main-font-family); //42
     padding: 40px 0;
+    @media screen and (max-width: 1280px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 2.5rem; //60px
+      text-align: center;
+      line-height: 2.5rem;
+    }
     @media screen and (max-width: 834px) {
-      font-size: 21px;
+      font-size: 2rem; //32px
+      text-align: center;
+    }
+    @media screen and (max-width: 774px) {
+      font-size: 1.313rem;
       line-height: 31px;
       text-align: center;
       padding: 40px 0 20px;
     }
+
+
+
   }
 }
 .wrap {
@@ -231,7 +363,7 @@ button {
 }
 .is-visible {
   display: none !important;
-  @media screen and (max-width: 834px) {
+  @media screen and (max-width: 774px) {
     display: block !important;
   }
 }

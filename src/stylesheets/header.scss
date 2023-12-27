@@ -11,47 +11,81 @@
   &__menu {
     display: flex;
     padding: 20px 0;
+    @media screen and (max-width: 430px) {
+      justify-content: space-evenly;
+    }
+    @media screen and (max-width: 744px) {
+      justify-content: space-evenly;
+    }
     @media screen and (max-width: 834px) {
-      justify-content: center;
+      justify-content: space-evenly;
+    }
+    @media screen and (max-width: 1024px) {
+      justify-content: space-evenly;
     }
     &::before {
       display: block;
       content: "";
-      width: 59%;
+      width: 55%;
       height: 2px;
       flex-shrink: 0;
       background-color: var(--main-color);
       margin-top: 11px;
       margin-right: 20px;
+      @media screen and (max-width: 1280px) {
+        width: 49%;
+      }
+      @media screen and (max-width: 1024px) {
+        width: 39%;
+      }
       @media screen and (max-width: 834px) {
+        width: 33%;
+      }
+      @media screen and (max-width: 774px) {
         display: none;
       }
     }
   }
 }
 .menu-item {
-  margin-right: 56px;
-  font: italic 400 16px var(--main-font-family);
+  margin-right: 2.5rem;
+  font: italic 400 var(--font-size) var(--main-font-family);
   text-transform: uppercase;
+  @media screen and (max-width: 1024px) {
+    margin-right: 1.9rem;
+  }
   @media screen and (max-width: 834px) {
-    font: italic 400 12px var(--main-font-family);
+    font-size: 0.9rem; //14px
+  }
+  @media screen and (max-width: 774px) {
+    font: italic 400 0.75rem var(--main-font-family);
     margin-right: 10px;
+  }
+  @media screen and (max-width: 430px) {
+    margin-right: 1rem;
+    font-size: 0.7rem;
   }
   &:last-of-type {
     margin-right: 0;
   }
 }
 .scentify-introduction {
- font: italic 800 41px/45px var(--secondary-font-family);
+ font: italic 800 var(--font-size-h3)/45px var(--secondary-font-family);
   color: var(--main-color);
   margin-left: 60px;
   width: 27%;
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem; //40px
+    width: 44%;
+  }
   @media screen and (max-width: 834px) {
-    font: italic 800 21px/21px var(--secondary-font-family);
+    font-size: 2.313rem; //37px
+    line-height: 2.2rem; //35.2px
+    width: 35%;
+  }
+  @media screen and (max-width: 774px) {
+    font: italic 800 1.313rem/1.313rem var(--secondary-font-family); //21px
     width: 47%;
     margin-left: 20px;
   }
-}
-.no-wrap {
-  white-space: nowrap;
 }

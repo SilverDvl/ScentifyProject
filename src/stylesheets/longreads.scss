@@ -17,6 +17,34 @@
     font: normal 400 16px var(--main-font-family);
     z-index: 2;
     transition: z-index 0.1s ease;
+    @media screen and (max-width: 1024px) {
+      top: 30%;
+    }
+    @media screen and (max-width: 834px) {
+      font-size: 0.94rem; //15px
+      padding: 1rem;
+      top: 40%;
+    }
+    @media screen and (max-width: 744px) {
+      width: 26rem;
+      font-size: 0.94rem; //15px
+      top: 33%;
+      left: 5%;
+      padding: 1rem;
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 0.81rem; //13px
+      width: 12.875rem;
+      padding: 14px;
+      height: 60%;
+      top: 57%;
+      left: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 6;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
     &:hover {
       z-index: 3;
     }
@@ -29,6 +57,15 @@
     position: relative;
     width:65%;
     z-index: 1;
+    @media screen and (max-width: 834px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 744px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 430px) {
+      width: 80%;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -44,27 +81,96 @@
 .slider {
   display: flex;
   padding: 40px 0;
+  overflow-x: auto;
+  @media screen and (max-width: 1024px) {
+    padding: 1.3rem 0;
+    overflow-x: auto;
+  }
+  @media screen and (max-width: 744px) {
+    padding: 1.3rem 0;
+    overflow-x: auto;
+  }
+  @media screen and (max-width: 430px) {
+    padding: 1.3rem 0;
+    overflow-x: auto;
+  }
+  &-img {
+    @media screen and (max-width: 1024px) {
+      width: 16rem;
+    }
+    @media screen and (max-width: 834px) {
+      width: 17rem;
+    }
+    @media screen and (max-width: 744px) {
+      width: 21rem;
+    }
+    @media screen and (max-width: 430px) {
+      width: 18rem;
+    }
+  }
   &-item {
     width: 30%;
     padding: 0 15px;
     height: 10%;
+    @media screen and (max-width: 1024px) {
+      width: unset;
+      padding: 0 1rem;
+    }
+    @media screen and (max-width: 834px) {
+      padding: 0 1rem;
+      width: unset;
+    }
+    @media screen and (max-width: 744px) {
+      margin: 0;
+      width: unset;
+    }
+    @media screen and (max-width: 430px) {
+      padding: 0 5px;
+      width: unset;
+    }
     img {
       border-radius: 10px;
       object-fit: cover;
+      @media screen and (max-width: 430px) {
+        border-radius: 5px;
+      }
     }
   }
   &-title {
     font: italic 400 26px var(--secondary-font-family);
+    @media screen and (max-width: 1024px) {
+      font-size: 1.44rem; //23px
+    }
+    @media screen and (max-width: 834px) {
+      font-size: 1.44rem; //23px
+    }
+    @media screen and (max-width: 744px) {
+      font-size: 1.438rem; //23px
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 1.3rem; //21px
+    }
   }
   &-description {
     font: normal 400 16px/20px var(--main-font-family);
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Количество отображаемых строк */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: normal; /* Убедитесь, что не используется nowrap */
-/* Остальные стили */
+    white-space: normal;
+    @media screen and (max-width: 1024px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 834px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 744px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 0.81rem; //13px
+    }
   }
 }
 
@@ -76,22 +182,84 @@
     border-radius: 15px;
     color: var(--secondary-color);
     margin: 80px 0;
+    @media screen and (max-width: 1024px) {
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (max-width: 834px) {
+      flex-direction: column-reverse;
+      padding: 2rem; //32px
+    }
+    @media screen and (max-width: 744px) {
+      flex-direction: column-reverse;
+      padding: 2rem; //32px
+    }
+    @media screen and (max-width: 430px) {
+      flex-direction: column-reverse;
+      padding: 1rem; //16px
+    }
   }
   &-info {
     display: flex;
     flex-direction: column;
     margin: 0 40px 0 0;
     width: 1000px;
+    @media screen and (max-width: 834px) {
+      margin: 0.5rem 40px 0 0;
+      width: 100%;
+    }
+    @media screen and (max-width: 744px) {
+      margin: 2rem 0;
+      width: 100%;
+    }
+    @media screen and (max-width: 430px) {
+      margin: 1rem 0;
+      width: 100%;
+    }
   }
   &-title {
     padding: 40px 0 0;
     border-bottom: 1px solid var(--secondary-color);
     width: 520px;
-    font: italic 400 41.89px var(--secondary-font-family);
+    font: italic 400 var(--font-size-h3) var(--secondary-font-family);
+    @media screen and (max-width: 834px) {
+      padding: 1.5rem 0 0;
+      font-size: 2.5rem; //40px
+    }
+    @media screen and (max-width: 744px) {
+      font-size: 2.813rem; //45px;
+      padding: 1rem 0 0;
+      width: 36rem;
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 2.1rem;
+      padding: 1rem 0 0;
+      width: 24rem;
+    }
   }
   &-description {
     padding: 20px 0;
     font: normal 400 16px/26px var(--main-font-family);
+    @media screen and (max-width: 1024px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 834px) {
+      width: 43rem;
+    }
+    @media screen and (max-width: 744px) {
+      font-size: 0.94rem;
+      width: 36rem;
+      padding: 2rem 0 0;
+      line-height: 1.8rem;
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 0.81rem; //13px
+      line-height: 1.4rem; //21px
+      width: 22rem;
+      padding: 1rem 0 0;
+    }
   }
   &-img {
     img {
@@ -110,8 +278,113 @@
     color: var(--secondary-color);
     font: normal 500 16px var(--main-font-family);
     text-transform: uppercase;
+    @media screen and (max-width: 1024px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 834px) {
+      font-size: 0.94rem; //15px
+    }
+    @media screen and (max-width: 744px) {
+      font-size: 0.94rem; //15px
+      padding: 0.313rem 0.625rem; //5px 10px
+      margin-right: 0.94rem;
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 0.81rem; //13px
+      padding: 0.313rem 0.625rem; //5px 10px
+      margin-right: 0.94rem;
+    }
     &:last-of-type {
       margin-right: 0;
     }
+  }
+}
+.flex {
+  &-wrapper {
+    position: relative;
+    @media screen and (max-width: 834px) {
+      width: 30rem;
+    }
+  }
+  &-description {
+    @media screen and (max-width: 834px) {
+      font-size: 0.9rem;
+      padding: 1rem;
+      width: 22rem;
+      right: 9rem;
+      top: 4.94rem;
+    }
+    @media screen and (max-width: 744px) {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.94rem;
+      line-height: 1.3rem;
+      width: 25rem;
+      padding: 1rem;
+    }
+    @media screen and (max-width: 430px) {
+      margin: -2rem 0 0 5rem;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.81rem;
+      line-height: 1.3rem;
+      width: 23rem;
+    }
+  }
+  &-card-img2 {
+    @media screen and (max-width: 834px) {
+      width: 27.44rem
+    }
+  }
+}
+.mt-2 {
+  @media screen and (max-width: 744px) {
+  margin-top: -3rem;
+  }
+  @media screen and (max-width: 430px) {
+    margin-top: 1rem;
+  }
+}
+.lt2 {
+  @media screen and (max-width: 834px) {
+    top: -2rem;
+    left: 11rem;
+  }
+}
+.lt1 {
+  top: 0;
+  width: 29rem;
+  height: unset;
+  position: absolute;
+  left: 30rem;
+  @media screen and (max-width: 1024px)  {
+    width: 31rem;
+    height: auto;
+    position: absolute;
+    left: 25rem;
+    top: 46%;
+  }
+  @media screen and (max-width: 834px) {
+    left: 19rem;
+    top: 47%;
+    width: 28rem;
+  }
+  @media screen and (max-width: 744px) {
+    width: 31rem;
+    height: auto;
+    position: absolute;
+    left: 36%;
+    top: 14rem;
+  }
+  @media screen and (max-width: 430px) {
+    left: -5rem;
+    top: 12rem;
+    width: 22.9rem;
+  }
+}
+.padding15 {
+  @media screen and (max-width: 834px) {
+    width: 29rem;
+    padding: 1.5rem;
   }
 }
