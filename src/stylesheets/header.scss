@@ -11,15 +11,21 @@
   &__menu {
     display: flex;
     padding: 20px 0;
+    @media screen and (max-width: 834px) {
+      justify-content: center;
+    }
     &::before {
       display: block;
       content: "";
-      width: 790px;
+      width: 59%;
       height: 2px;
       flex-shrink: 0;
       background-color: var(--main-color);
       margin-top: 11px;
       margin-right: 20px;
+      @media screen and (max-width: 834px) {
+        display: none;
+      }
     }
   }
 }
@@ -27,15 +33,24 @@
   margin-right: 56px;
   font: italic 400 16px var(--main-font-family);
   text-transform: uppercase;
+  @media screen and (max-width: 834px) {
+    font: italic 400 12px var(--main-font-family);
+    margin-right: 10px;
+  }
   &:last-of-type {
     margin-right: 0;
   }
 }
 .scentify-introduction {
- font: italic 800 41.89px/45px var(--secondary-font-family);
+ font: italic 800 41px/45px var(--secondary-font-family);
   color: var(--main-color);
   margin-left: 60px;
   width: 27%;
+  @media screen and (max-width: 834px) {
+    font: italic 800 21px/21px var(--secondary-font-family);
+    width: 47%;
+    margin-left: 20px;
+  }
 }
 .no-wrap {
   white-space: nowrap;

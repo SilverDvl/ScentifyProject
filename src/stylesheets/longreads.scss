@@ -2,6 +2,9 @@
   position: relative;
   display: flex;
   justify-content: end;
+  &-library {
+    justify-content: start;
+  }
   &-description {
     position: absolute;
     top: 15%;
@@ -16,6 +19,10 @@
     transition: z-index 0.1s ease;
     &:hover {
       z-index: 3;
+    }
+    &-library {
+      left: 60%;
+      top: 40%;
     }
   }
   &-img {

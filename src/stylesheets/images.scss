@@ -2,12 +2,18 @@
   &-header {
     position: relative;
     height: 100vh;
+    @media screen and (max-width: 834px) {
+      height: 82vh;
+    }
   }
   &-main {
     position: relative;
   }
   &-footer {
     background-color: var(--main-color);
+    @media screen and (max-width: 834px) {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -17,11 +23,18 @@
   left: -5%;
   width: 30%;
   z-index: -10;
+  @media screen and (max-width: 834px) {
+    width: 80%;
+  }
 }
 .logo {
   padding: 40px 0;
   width: 85%;
   margin: 0 auto;
+  @media screen and (max-width: 834px) {
+    padding: 144px 0 15px;
+    width: 100%;
+  }
 }
 
 .overprint2 {
@@ -29,12 +42,21 @@
   top: 70%;
   z-index: -10;
   width: 20%;
+  @media screen and (max-width: 834px) {
+    top: 68%;
+    left: -10%;
+    width: 36%;
+  }
 }
 .overprint3 {
  position: absolute;
   top: 33%;
   right: 0;
   width: 37%;
+  @media screen and (max-width: 834px) {
+    top: 70%;
+    width: 65%;
+  }
 }
 .overprint4 {
   position: absolute;
@@ -56,13 +78,6 @@
   width: 25%;
   transform: rotate(0deg);
 }
-//.overprint7 {
-//  position: absolute;
-//  top: 50%;
-//  right: -5%;
-//  width: 44%;
-//  transform: rotate(335deg);
-//}
 .overprint8 {
   position: absolute;
   top: 81%;

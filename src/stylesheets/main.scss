@@ -44,9 +44,17 @@ input {
   width: 330px;
   height: 39px;
   background: transparent;
-  font-size: 18px;
+  font-size: 16px;
   padding: 4px 10px;
   border-radius: 5px;
+  @media screen and (max-width: 834px) {
+    height: 20px;
+    width: 200px;
+    font-size: 13px;
+  }
+  &::placeholder {
+    font: normal 400 16px var(--main-font-family);
+  }
 }
 button {
   padding: 10px 15px;
@@ -57,10 +65,17 @@ button {
   border-radius: 5px;
   color: var(--secondary-color);
   font: normal 400 16px var(--main-font-family);
+  @media screen and (max-width: 834px) {
+    padding: 8px 11px;
+    font-size: 13px;
+  }
 }
 .container {
   margin: 0 auto;
   max-width: 1400px;
+  @media screen and (max-width: 1400px) {
+    padding: 0 10px;
+  }
 }
 .button {
   border-radius: 5px;
@@ -73,20 +88,36 @@ button {
   margin-top: 20px;
   font: normal 400 16px var(--main-font-family);
   float: right;
+  @media screen and (max-width: 834px) {
+    font-size: 13px;
+    width: 29%;
+    float: unset;
+  }
 }
 .articles-section {
   margin: 80px 0;
+  @media screen and (max-width: 834px) {
+    margin: 0;
+  }
 }
 .library-section {
   &-wrapper {
     margin: 80px 0;
     background-color: var(--main-color);
     height: 100vh;
+    @media screen and (max-width: 834px) {
+      margin: 0;
+      height: 60vh;
+    }
   }
 }
 .title {
   font: italic 800 67.77px var(--secondary-font-family);
   padding: 40px 0;
+  @media screen and (max-width: 834px) {
+    font-size: 35px;
+    padding: 20px 0 20px;
+  }
   a {
     color: var(--main-color)
   }
@@ -95,6 +126,10 @@ button {
     padding: 40px 0;
     display: flex;
     justify-content: end;
+    @media screen and (max-width: 834px) {
+      font-size: 35px;
+      padding: 20px 20px;
+    }
     color: var(--secondary-color);
     a {
       color: var(--secondary-color);
@@ -104,6 +139,7 @@ button {
 .secondary-title {
   font: italic 800 109px var(--secondary-font-family);
   padding: 40px 0;
+  letter-spacing: 10px;
 }
 .sub-title {
   font: italic 800 41.89px/45px var(--secondary-font-family);
@@ -118,16 +154,27 @@ button {
   background: var(--card-color);
   width: 45%;
   border-radius: 10px;
+  @media screen and (max-width: 834px){
+    padding: 14px;
+    width: unset;
+  }
   &__title {
     padding-bottom: 10px;
     border-bottom: 1px solid black;
     margin-bottom: 5px;
     font: italic 300 41.89px var(--secondary-font-family);
+    @media screen and (max-width: 834px){
+      padding-bottom: 0;
+      font-size: 20px;
+    }
   }
   &__text {
     line-height: 32px;
-    font: normal 400 16px var(--main-font-family
-    );
+    font: normal 400 16px var(--main-font-family);
+    @media screen and (max-width: 834px){
+      line-height: 22px;
+      font-size: 13px;
+    }
     &-test {
       position: absolute;
       top: 10px;
@@ -152,9 +199,43 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 834px) {
+      max-width: unset;
+      padding: 0;
+    }
   }
   &-info {
     font: normal 600 42px/47px var(--main-font-family);
     padding: 40px 0;
+    @media screen and (max-width: 834px) {
+      font-size: 21px;
+      line-height: 31px;
+      text-align: center;
+      padding: 40px 0 20px;
+    }
   }
+}
+.wrap {
+  position: relative;
+}
+.button-center {
+  float: unset;
+  display: inline;
+  margin: 20px 0;
+  text-align: center;
+}
+.div-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.is-visible {
+  display: none !important;
+  @media screen and (max-width: 834px) {
+    display: block !important;
+  }
+}
+.mr-2 {
+  float: unset;
+  margin-right: 20px;
 }
