@@ -75,7 +75,7 @@
     @media screen and (max-width: 1024px) {
       width: 33.2rem;
       @media screen and (max-width: 834px) {
-        width: 16.44rem;
+        width: 22.44rem;
       }
     }
     @media screen and (max-width: 744px) {
@@ -169,6 +169,7 @@
       padding: 1.25rem; //20px
       top: 64%;
       right: 55%;
+      width: 56%;
     }
     @media screen and (max-width: 744px) {
      display: none;
@@ -316,6 +317,10 @@ width: 22%;
     font: normal 400 0.8rem var(--main-font-family);
     width: 29%;
     padding: 0.3rem 0.6rem; //5px 10px
+  }
+  @media screen and (max-width: 430px) {
+    width: 43%;
+    margin-top: 1rem;
   }
 a {
   color: var(--secondary-color);
