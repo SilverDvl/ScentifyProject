@@ -54,17 +54,20 @@
   left: -5%;
   width: 30%;
   z-index: -10;
-  @media screen and (max-width: 744px) {
+  @media screen and (max-width: 1280px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 1024px) {
     width: 45%;
   }
   @media screen and (max-width: 834px) {
     width: 45%;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 744px) {
     width: 45%;
   }
-  @media screen and (max-width: 1280px) {
-    width: 40%;
+  @media screen and (max-width: 430px) {
+    width: 58%;
   }
 }
 .overprint2 {
@@ -85,9 +88,13 @@
     width: 29%;
   }
   @media screen and (max-width: 774px) {
-    top: 68%;
+    top: 75%;
     left: -10%;
-    width: 36%;
+    width: 25%;
+  }
+  @media screen and (max-width: 430px) {
+    width: 46%;
+    top: 60%;
   }
 }
 .overprint3 {
@@ -95,19 +102,48 @@
   top: 33%;
   right: 0;
   width: 37%;
-  @media screen and (max-width: 774px) {
-    top: 70%;
-    width: 65%;
+  @media screen and (max-width: 1024px) {
+    top: 55%;
+    width: 43%;
   }
   @media screen and (max-width: 834px) {
     top: 56%;
     right: -5%;
     width: 42%;
   }
-  @media screen and (max-width: 1024px) {
-    top: 55%;
-    width: 43%;
+  @media screen and (max-width: 774px) {
+    top: 39%;
+    width: 41%;
   }
+  @media screen and (max-width: 430px) {
+    top: 32%;
+    width: 48%;
+  }
+}
+.overprint4 {
+  position: absolute;
+  transform: rotate(335deg);
+  width: 37%;
+  right: -6rem;
+  top: 4rem;
+  @media screen and (max-width: 734px) {
+    left: -4rem;
+    top: 5rem;
+    transform: rotate(77deg);
+  }
+  @media screen and (max-width: 430px) {
+    right: -3rem;
+    position: absolute;
+    top: -6%;
+    width: 49%;
+  }
+}
+.overprint5 {
+  position: absolute;
+  transform: rotate(335deg);
+  width: 40%;
+  right: -7rem;
+  top: 88rem;
 }
 
 
